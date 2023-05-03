@@ -34,7 +34,7 @@ Promise.all([promise1(), promise2(), promise3()]).then(() => {
 	document.getElementById('pv-1').innerText = timeTakenP1 / 1000;
 	document.getElementById('pv-2').innerText = timeTakenP2 / 1000;
 	document.getElementById('pv-3').innerText = timeTakenP3 / 1000;
-	document.getElementById('total').innerText = (timeTakenP1, timeTakenP2, timeTakenP3) / 1000;
+	document.getElementById('total').innerText = (timeTakenP1 + timeTakenP2 + timeTakenP3) / 1000;
 })
 
 function getRandomIntInclusive(min, max) {
